@@ -1,11 +1,11 @@
-*Site Builder* does a lot of what *Dreamweaver* does � It helps you build web
+*Site Builder* does a lot of what *Dreamweaver* does — It helps you build web
  sites. But it has one feature that __I__ really need and love: the ability
  to switch from typing in English to Thai with the click of a button. This became
  mandatory for me when I launched [ThaiDrills](https://ThaiDrills.com):
  a site that teaches the Thai language.
 
-Here's an example: <b>????????????????????????????</b> � it means <i>typing
- Thai is fun and easy</i>. Took about 30 seconds to do � Try *that* in
+Here's an example: __เขียนภาษาไทยในแบบง่ายและสนุก__ — it means <i>typing
+ Thai is fun and easy</i>. Took about 30 seconds to do — Try *that* in
  *Dreamweaver* :)
 
 Besides this, the interface is more to my liking as an HTML guy. There's no
@@ -41,9 +41,9 @@ So for example, if I created `menu.div` and `sidebar.div`,
   ~scripts.div
 ~~~
 
-You get the idea � the `~content` entry causes the current
+You get the idea — the `~content` entry causes the current
  content page to get pulled in. You can create an arbitrary number of other
- layouts as well, but most sites will usually only have a couple � even a
+ layouts as well, but most sites will usually only have a couple — even a
  commerce site will have only a handful. And, it's easy to override the default
  layout for any page.
 
@@ -64,8 +64,8 @@ You get the idea � the `~content` entry causes the current
 *  __Script__ Displays the content of the js directory and let's you edit `.js` files.
 
 There is full link check functionality: click the button to verify all links
- (including those in `<img>`, `<link>`, and `<script>` tags) �
- and identify orphan pages � both internal and external.
+ (including those in `<img>`, `<link>`, and `<script>` tags) —
+ and identify orphan pages — both internal and external.
 
 The upload button will ftp it all up to your domain.
 
