@@ -1,0 +1,3 @@
+Main-Class: com.shanebow.web.SiteBuilder._SiteBuilder
+Class-Path: _sbcommon.jar _sbdao.jar _sbspider.jar mysql-connector-java-5.1.13-bin.jar edtftpj.jar _filetree.jar _sbthai.jar . 
+
