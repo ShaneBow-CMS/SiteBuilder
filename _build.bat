@@ -1,19 +1,22 @@
 ::****************************************************
 ::*     Standard Java Development Initialization     *
 ::****************************************************
-@set PATH=%PATH%;"C:\Program Files\Java\jdk1.6.0_20\bin"
+@set PATH="C:\Program Files\Java\jdk1.8.0_221\bin";%PATH%
 	@rem echo permenent classpath=%CLASSPATH%
-	@set CLASSPATH=%CLASSPATH%;c:/apps/src
+	@set CLASSPATH=%CLASSPATH%;d:/apps/src
 	@rem echo modified classpath=%CLASSPATH%
 	@set JCOPTS=-Xlint:unchecked
 	@rem set JCOPTS=-g:none -nowarn
 	@set JC=javac -cp ".;*" %JCOPTS%
+javac -version
+java -version
+	cd \apps\src
 
 ::****************************************************
 ::*       Java Project Specific Initialization       *
 ::****************************************************
 	@set SRC_ROOTDIR=com\shanebow\web
-	@set USR_ROOTDIR=c:\apps\usr\shanebow\tools
+	@set USR_ROOTDIR=d:\apps\usr\shanebow\tools
 	@set USR_ADMINDIR=%USR_ROOTDIR%\admin
 	@set USR_CLIENTDIR=%USR_ROOTDIR%
 
