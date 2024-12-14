@@ -111,7 +111,13 @@ fHost = "http://" + SBProperties.get(BuildCriteria.PKEY_DOMAIN).toLowerCase();
 			try { lmodSEO = new File(sourceRoot, noExt+".seo").lastModified(); }
 			catch (Exception noSEOFile) {}
 			page = new Page(path, lmod, lmodSEO);
-			readTitle(file, page); // fills in title
+
+			if (noExt.endsWith(".js")) {// ".js.content" file
+				//	log("SitePages._add(%s) set JS title to: '%s'", path, noExt);
+				page.setTitle(noExt); // e.g. '/public_html/assets/apps/pdf/jspdf.js'
+				}
+			else
+				readTitle(file, page); // fills in title
 			}
 		else page = new Page(path, lmod, lmodSEO);
 		PAGE_MAP.put(path, page);
