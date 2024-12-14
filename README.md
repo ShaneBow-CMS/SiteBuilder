@@ -4,8 +4,8 @@
  mandatory for me when I launched [ThaiDrills](https://ThaiDrills.com):
  a site that teaches the Thai language.
 
-Here's an example: __เขียนภาษาไทยในแบบง่ายและสนุก__ — it means <i>typing
- Thai is fun and easy</i>. Took about 30 seconds to do — Try *that* in
+Here's an example: __เขียนภาษาไทยในแบบง่ายและสนุก__ — it means *typing
+ Thai is fun and easy*. Took about 30 seconds to do — Try *that* in
  *Dreamweaver* :)
 
 Besides this, the interface is more to my liking as an HTML guy. There's no

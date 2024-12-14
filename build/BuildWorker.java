@@ -111,13 +111,13 @@ if (isIncludeDir) System.out.println("Build.including(" + sourceRoot + ", " + ta
 				publish(new BuildEvent(toDir, "mkdir"));
 				}
 
-			for ( File file : files )
-				{
-				if ( file.isDirectory())
-					dirStack.push(file);
-				else // check ext and process accordingly
-					{
-					String filename = file.getPath().substring(fromDirLen + 1);
+			for ( File file : files ) {
+				String filename = file.getName();
+				if ( file.isDirectory()) {
+					if (!filename.startsWith(".")) dirStack.push(file);
+					else System.out.println("build skipped dot file: '" + filename + "'");
+					}
+				else { // check ext and process accordingly
 					int dotAt = filename.lastIndexOf('.');
 					if (dotAt < 0) continue; // no extension
 					String ext = filename.substring(dotAt);
