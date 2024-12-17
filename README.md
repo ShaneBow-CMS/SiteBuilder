@@ -17,6 +17,17 @@ and the batch file sets the `classpath` accordingly.
 * `cd` `~apps/usr/shanebow/tools`
 * `java -jar SiteBuilder.jar`
 
+## Tabs
+
+The tabs let you access various important directories for a project:
+
+* __Source__ holds the directory tree of source files that are iterated over to build the target
+* __Target__ holds the finished project which is generally uploaded to the web
+* __Themes__ holds various themes that can be imported into source files
+* __Libs__ holds code organized as components that can be imported into source files (via `~~some/lib/path`) and/or copied directly to the target directory tree (via a `.dir` file)
+* __Apps__ is a configurable directory relative to the *Source* directory (note that you can use `..` to traverse up to/through the source's parent directory)
+* __Assets__ is another configurable directory similar to *Apps*, except that it is relative to `public_html` when it exists
+
 ## Original Motivation
 
 The following was written back in 2011, back in the days when web sites
