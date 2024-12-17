@@ -53,7 +53,7 @@ public final class _SiteBuilder
 	private static final String TAB_ASSETS = "Assets";
 	private static final String TAB_THEMES = "Themes";
 	private static final String TAB_LIBS = "Libs";
-	private static final String TAB_APPS = "Config";
+	private static final String TAB_APPS = "Apps";
 	private static final String TAB_DBM = "DBM";
 
 	public static void main( String[] args )
@@ -156,7 +156,7 @@ public final class _SiteBuilder
 		{
 		UniEditor ue;
 		fTabs.addTab("Source",    new UniEditor("", null, true), "Site source files" );
-		fTabs.addTab("Site Map",  new SiteMap(), "Organize Site Map" );
+//		fTabs.addTab("Site Map",  new SiteMap(), "Organize Site Map" );
 		fTabs.addTab(TAB_APPS,    new UniEditor("", null, true), "Web Apps" );
 		fTabs.addTab(TAB_ASSETS,  new UniEditor("", null, true), "Site Look & Feel" );
 
@@ -168,7 +168,7 @@ public final class _SiteBuilder
 		fTabs.addTab(TAB_TARGET,  ue = new UniEditor("", null, true), "Local web site" );
 		ue.setForceHtml(false);
 //		fTabs.addTab("Wares",     new WaresPanel(), "What's sold here" );
-		fTabs.addTab(TAB_DBM,     new DBMTab(), "Database Manager" );
+//		fTabs.addTab(TAB_DBM,     new DBMTab(), "Database Manager" );
 		return fTabs;
 		}
 

@@ -1,4 +1,29 @@
-*Site Builder* does a lot of what *Dreamweaver* does — It helps you build web
+# Site Builder
+
+## Development
+
+This is *Classic Java*, built with a batch file (`_build.bat`).
+
+The directory structure exactly matches the package structure,
+and the batch file sets the `classpath` accordingly.
+
+### Compile and jar
+
+* `cd` `~apps/src/com/shanebow/web/SiteBuilder`
+* `./_build.bat`
+
+### Run from command line
+
+* `cd` `~apps/usr/shanebow/tools`
+* `java -jar SiteBuilder.jar`
+
+## Original Motivation
+
+The following was written back in 2011, back in the days when web sites
+were built as basically a set of static `html` pages sprinkled with some
+Javascript or *Macromedia Flash* to provide some interactivity.
+
+*Site Builder* does a lot of what *Dreamweaver* [did] — It helps you build web
  sites. But it has one feature that __I__ really need and love: the ability
  to switch from typing in English to Thai with the click of a button. This became
  mandatory for me when I launched [ThaiDrills](https://ThaiDrills.com):
@@ -19,7 +44,7 @@ A combo box at the bottom makes switching between sites a snap. Just navigate
  process pulls in all the other pieces (like heading, side bar, and menus). Kind
  of like JSP, ASP, etc except that it's making static pages (albeit with ajax).
 
-Each site gets a default <i>layout</i> which is really just an html file
+Each site gets a default *layout* which is really just an html file
  (sans the `<head>` and `<body>` tags) which can import other html
  fragments that I call *div* files.
 
@@ -49,19 +74,18 @@ You get the idea — the `~content` entry causes the current
 
 *Site Builder* is structured in a tab view with the following tabs:
 
-*  __Site Map__ This has a tree view of the site map being constructed and
+* __Site Map__ This has a tree view of the site map being constructed and
    a table containing all of the pages in the site, and another listing all the
    site pages that are not yet in the site map. The whole thing works with drag
    and drop. In the tables you can specify page priority and change frequency for
    the search engines. There's also a button to edit the `robots.txt` file. The
    build process will create `sitemap.html`, `sitemap.xml`, and the `robots.txt` files.
-*  __Content__ A directory navigator (based at the site's source dir) and the
+* __Content__ A directory navigator (based at the site's source dir) and the
   files in the current dir on the left. The editor for the selected file on the
   right. Your usual buttons, and that all important "Thai" checkbox".
-*  __Templates__ This is where you edit those `.layout` files and 
-  `.div` files I mentioned above.
-*  __Style__ Displays the content of the css directory and let's you edit `.css` files.
-*  __Script__ Displays the content of the js directory and let's you edit `.js` files.
+* __Templates__ This is where you edit those `.layout` files and `.div` files mentioned above.
+* __Style__ Displays the content of the css directory and let's you edit `.css` files.
+* __Script__ Displays the content of the js directory and let's you edit `.js` files.
 
 There is full link check functionality: click the button to verify all links
  (including those in `<img>`, `<link>`, and `<script>` tags) —
